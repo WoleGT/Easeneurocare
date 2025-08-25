@@ -201,6 +201,15 @@
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
+										<label for="name">Phone Number</label>
+										<div class="input-wrap">
+											<div class="icon"><span class="fa brands fa-whatsapp"></span></div>
+											<input type="text" name="phone_number" class="form-control" placeholder="enter phone/whatsapp number..." Required>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
 										<label for="frequency">Select Frequence</label>
 										<div class="form-field">
 											<div class="select-wrap">

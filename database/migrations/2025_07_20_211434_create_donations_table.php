@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('full_name');
             $table->string('email');
+            $table->string('phone_number', 20);
             $table->enum('frequency', ['weekly', 'monthly', 'quarterly', 'biannually', 'annually', 'one-time']);
             $table->decimal('amount', 10, 2);
             $table->enum('payment_method', ['bank_transfer', 'bank_card', 'standing_order']);
