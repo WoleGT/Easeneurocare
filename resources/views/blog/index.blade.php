@@ -14,7 +14,7 @@
          <img src="{{ asset('storage/' . $post->image_path) }}" alt="Post Image" class="block-20">
           <div class="text p-4">
            <div class="meta mb-2">
-            <div><small>Published on {{ $post->created_at->format('F j, Y') }}</small> {{-- e.g. July 21, 2025 --}}</div>
+            <div><small>{{ $post->created_at->format('F j, Y') }}</small> {{-- e.g. July 21, 2025 --}}</div>
             <div><a href="#">Admin</a></div>
             <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
           </div>
@@ -30,7 +30,15 @@
         </a>
         <div class="text p-4">
          <div class="meta mb-2">
-          <div><div><small>Published on {{ $post->created_at->format('F j, Y') }}</small> {{-- e.g. July 21, 2025 --}}</div>
+            @if($post->owner_name || $post->owner_location)
+            <p><strong>By:</strong> {{ $post->owner_name }} 
+            @if($post->owner_location)<br>
+           <span> {{ $post->owner_location }}</span>
+           @endif
+          </p>
+          @endif
+
+          <div><div><small>{{ $post->created_at->format('F j, Y') }}</small> {{-- e.g. July 21, 2025 --}}</div>
           <div><a href="#">Admin</a></div>
           <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
         </div>
@@ -161,7 +169,7 @@
 
     <img src="{{ asset('storage/' . $post->image_path) }}" alt="Post Image" width="300">
     <h2>{{ $post->title }}</h2>
-    <small>Published on {{ $post->created_at->format('F j, Y') }}</small> {{-- e.g. July 21, 2025 --}}
+    <small>{{ $post->created_at->format('F j, Y') }}</small> {{-- e.g. July 21, 2025 --}}
     <p>{{ Str::limit($post->body, 100) }}</p>
     <a href="{{ route('blog.show', $post->id) }}">Read More</a>
   </div>

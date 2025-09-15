@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row no-gutters slider-text align-items-end">
       <div class="col-md-9 ftco-animate pb-5">
-       <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{{ url('/blogmain')}}">Blog main page <i class="ion-ios-arrow-forward"></i></a></span> <span> <i class="ion-ios-arrow-forward"></i></span></p>
+       <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{{ url('/blogmain')}}"> ← Back <i class="ion-ios-arrow-forward"></i></a></span> <span> <i class="ion-ios-arrow-forward"></i></span></p>
        <h1 class="mb-0 bread" href="{{ url('blogmain')}}"></a></h1>
      </div>
    </div>
@@ -32,8 +32,7 @@
         <div class="row mt-5">
 				<div class="col-md-12 text-center">
                         <p class="copyright">
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> Ease Neurocare. All rights reserved | Developed by: 
-						<a href="https://wolegt.vercel.app/" target="_blank">wolegtconsulting.dev</a>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> Ease Neurocare. All rights reserved</p>
 					</div>
 				</div> 
 </footer>

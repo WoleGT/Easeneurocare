@@ -101,10 +101,15 @@
                 <div class="col-md-4 col-lg-3 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
                         <img src="{{ asset('storage/' . $post->image_path) }}" alt="{{ $post->title }}" class="block-20">
+                         @if($post->owner_name || $post->owner_location)
+                                  <strong></strong> {{ $post->owner_name }} 
+                                  @if($post->owner_location)<br>
+                                  <span> {{ $post->owner_location }}</span>
+                                  @endif
+                                @endif
                         <div class="text-p4">
                             <div class="meta mb-2">
-                                <div><small>Published on {{ $post->created_at->format('F j, Y') }}</small></div>
-                                <div><a href="{{ url('/admin/login')}}">Admin</a></div>
+                            <br> <small>{{ $post->created_at->format('F j, Y') }}</small>
                             </div>
                             <h3 class="heading">{{ $post->title }}</h3>
                             <p>{{ \Illuminate\Support\Str::limit($post->body, 150) }}</p>

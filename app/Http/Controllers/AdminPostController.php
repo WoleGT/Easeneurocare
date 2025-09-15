@@ -28,6 +28,8 @@ class AdminPostController extends Controller
         'title' => 'required|string|max:255',
         'body' => 'required|string',
         'image' => 'nullable|image|max:2048',
+        'owner_name' => 'nullable|string|max:255',
+        'owner_location' => 'nullable|string|max:255',
     ]);
 
     if ($request->hasFile('image')) {
@@ -54,7 +56,9 @@ class AdminPostController extends Controller
         $data = $request->validate([
             'title' => 'required|string|max:255',
             'body' => 'required|string',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048'
+            'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'owner_name' => 'nullable|string|max:255',
+            'owner_location' => 'nullable|string|max:255',
         ]);
           if ($request->hasFile('image')) {
             $data['image_path'] = $request->file('image')->store('blog_images', 'public');

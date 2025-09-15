@@ -22,6 +22,18 @@
     </div>
 
     <div class="mb-3">
+      <label for="title" class="form-label">Post Owner Name</label>
+      <input type="text" name="owner_name" class="form-control" value="{{ old('title') }}" required> 
+    </div>
+
+    <div class="mb-3">
+      <label for="title" class="form-label">Post Owner Location</label>
+      <input type="text" name="owner_location" class="form-control" value="{{ old('title') }}" required> 
+    </div>
+
+    
+
+    <div class="mb-3">
       <label for="body" class="form-label">Body</label>
       <textarea name="body" class="form-control" rows="6" value="{{ old('title') }}" required></textarea>
     </div>
