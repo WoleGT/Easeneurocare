@@ -688,7 +688,7 @@
                                 <div><small>{{ $post->created_at->format('F j, Y') }}</small></div>
                             </div>
                             <h3 class="heading">{{ $post->title }}</h3>
-                            <p>{{ \Illuminate\Support\Str::limit($post->body, 100) }}</p>
+                            <p>{!! nl2br(e(\Illuminate\Support\Str::limit($post->body, 150))) !!}</p>
                             <p><a href="{{ route('blog.show', $post->id) }}" class="btn btn-secondary">Read more</a></p>
                         </div>
                     </div>

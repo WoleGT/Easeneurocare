@@ -265,7 +265,7 @@
 				<div class="col-md-12 text-center">
 
 					<p class="copyright">
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> Ease Neurocare. All rights reserved | Developed by: <a href="https://wolegt.vercel.app/" target="_blank">wolegtconsulting.dev</a>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> Ease Neurocare. All rights reserved
 					</div>
 				</div>
 			</div>

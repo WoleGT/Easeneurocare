@@ -112,7 +112,7 @@
                             <br> <small>{{ $post->created_at->format('F j, Y') }}</small>
                             </div>
                             <h3 class="heading">{{ $post->title }}</h3>
-                            <p>{{ \Illuminate\Support\Str::limit($post->body, 150) }}</p>
+                           <p>{!! nl2br(e(\Illuminate\Support\Str::limit($post->body, 150))) !!}</p>
                             <p><a href="{{ route('blog.show', $post->id) }}" class="btn btn-secondary">Read more</a></p>
                         </div>
                     </div>
@@ -191,7 +191,7 @@
 				<div class="col-md-12 text-center">
 
 					<p class="copyright">
-						Copyright &copy;<script>document.write(new Date().getFullYear());</script> Ease Neurocare. All rights reserved | Developed by: <a href="https://wolegt.vercel.app/" target="_blank">wolegtconsulting.dev</a>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> Ease Neurocare. All rights reserved
 					</div>
 				</div>
 			</div>

@@ -15,6 +15,8 @@
             <tr>
                 <th>Title</th>
                 <th>Created</th>
+                <th>owner_name</th>
+                <th>owner_location</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -23,6 +25,8 @@
                 <tr>
                     <td>{{ $post->title }}</td>
                     <td>{{ $post->created_at->diffForHumans() }}</td>
+                    <td>{{ $post->owner_name }}</td>
+                    <td>{{ $post->owner_location }}</td>
                     <td>
                         <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-sm btn-warning">Edit</a>
                         <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display:inline;">

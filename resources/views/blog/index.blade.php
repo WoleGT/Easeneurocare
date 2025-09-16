@@ -43,7 +43,7 @@
           <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
         </div>
         <h3 class="heading">{{ $post->title }}</a></h3>
-        <p>{{ Str::limit($post->body, 100) }}</p>
+         <p style="font-family: Verdana, Geneva, sans-serif; line-height:1.5; padding-left:3%; padding-right:2%">{!! nl2br(e(\Illuminate\Support\Str::limit($post->body, 150))) !!}</p>
         <p><a href="{{ route('blog.show', $post->id) }}" class="btn btn-secondary">Read more</a></p>
       </div>
     </div>

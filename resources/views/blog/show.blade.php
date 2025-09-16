@@ -30,13 +30,14 @@
 @extends('layouts.app')
 
 @section('content')
-  <h1>{{ $post->title }}</h1>
+  <h1 style="padding-left:3%; font-family: Verdana, Geneva, sans-serif">{{ $post->title }}</h1>
 
   @if($post->image_path)
   <div class="container-fluid px-0">
-    <img src="{{ asset('storage/' . $post->image_path) }}" class="img-fluid w-100" style="border-radius:5%">
+    <img src="{{ asset('storage/' . $post->image_path) }}" width="100%" height="400" style="border-radius:3px">
   </div>
 @endif
+
   @if($post->owner_name || $post->owner_location)
     <p><strong></strong> {{ $post->owner_name }} 
        @if($post->owner_location)<br>
@@ -47,22 +48,28 @@
   <p>
   <small>{{ $post->created_at->format('F j, Y') }}</small>
   </p>
-       <p style="font-family: Verdana, Geneva, sans-serif;">{{ $post->body }}</p>
+       <p style="font-family: Verdana, Geneva, sans-serif; line-height:1.5; padding-left:3%; padding-right:2%">{!! nl2br(e($post->body)) !!}</p>
   <p></p>
 </div>
 
-  <h4>Leave a Comment</h4>
+  <h5>Leave a Comment</h5>
   <form method="POST" action="{{ route('comments.store') }}">
     @csrf
     <input type="hidden" name="post_id" value="{{ $post->id }}">
-    <input type="text" name="name" placeholder="Your name" required>
-    <textarea name="body" placeholder="Write your comment" required></textarea>
-    <button type="submit">Submit</button>
+    <p>
+    <input type="text" name="name" width="450" height="50"  placeholder="Your name" required>
+    </p>
+    <p>
+    <textarea name="body"  width="450" height="300" placeholder="Write your comment" required></textarea>
+    </p>
+    <p>
+    <button type="submit"style="width:10%;color:purple; border-radius: 10px; font-size:25px">Submit</button>
+    </p>
   </form>
 
   
 
-  <h4>Comments</h4>
+  <h5>Comments</h5>
   @foreach($post->comments as $comment)
     <p><strong>{{ $comment->name }}</strong>: {{ $comment->body }}</p>
   @endforeach
