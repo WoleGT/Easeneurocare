@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Post;
 
 
 class AdminAuthController extends Controller
@@ -25,6 +26,15 @@ public function login(Request $request)
         'email' => 'Invalid credentials',
     ]);
 }
+
+
+
+public function dashboard()
+{
+    $posts = Post::latest()->paginate(10);
+    return view('posts.index', compact('posts'));
+}
+
 
 public function logout()
 {

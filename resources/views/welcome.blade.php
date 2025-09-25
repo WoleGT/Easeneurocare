@@ -676,7 +676,9 @@
             @foreach($recentPosts as $post)
                 <div class="col-md-4 col-lg-3 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <img src="{{ asset('storage/' . $post->image_path) }}" alt="{{ $post->title }}" class="block-20">
+
+					<img src="{{ postImageUrl($post->image_path) }}" alt="{{ $post->title }}" class="block-20">
+
 				         @if($post->owner_name || $post->owner_location)
                                   <strong></strong> {{ $post->owner_name }} 
                                   @if($post->owner_location)<br>

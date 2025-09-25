@@ -130,7 +130,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-4">
 					<div class="volunteer">
 						<div class="img" style="background-image: url(images/teamm-1.jpg);"></div>
 						<div class="text text-1">
@@ -139,7 +139,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-4">
 					<div class="volunteer">
 						<div class="img" style="background-image: url(images/teamm-2.jpg);"></div>
 						<div class="text text-2">
@@ -148,7 +148,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-4">
 					<div class="volunteer">
 						<div class="img" style="background-image: url(images/teamm-3.jpg);"></div>
 						<div class="text text-3">
@@ -157,18 +157,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3">
-					<div class="volunteer">
-						<div class="img" style="background-image: url(images/teamm-4.jpg);"></div>
-						<div class="text text-4">
-							<h3>Saango</h3>
-							<span>Counsellor</span>
-						</div>
-					</div>
-				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-4">
 					<div class="volunteer">
 						<div class="img" style="background-image: url(images/team_1.jpg);"></div>
 						<div class="text text-1">
@@ -177,7 +168,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-4">
 					<div class="volunteer">
 						<div class="img" style="background-image: url(images/team_2.jpg);"></div>
 						<div class="text text-2">
@@ -186,7 +177,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-4">
 					<div class="volunteer">
 						<div class="img" style="background-image: url(images/team_3.jpg);"></div>
 						<div class="text text-3">
@@ -195,12 +186,30 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 col-lg-3">
+				<div class="col-md-6 col-lg-4">
 					<div class="volunteer">
 						<div class="img" style="background-image: url(images/team_4.jpg);"></div>
 						<div class="text text-4">
 							<h3>Aishatu</h3>
 							<span>Perent Lead</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="volunteer">
+						<div class="img" style="background-image: url(images/teamm-5.jpg);"></div>
+						<div class="text text-4">
+							<h3>Abimbola</h3>
+							<span>Support Consultant</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<div class="volunteer">
+						<div class="img" style="background-image: url(images/teamm-4.jpg);"></div>
+						<div class="text text-4">
+							<h3>Saango</h3>
+							<span>Counsellor</span>
 						</div>
 					</div>
 				</div>

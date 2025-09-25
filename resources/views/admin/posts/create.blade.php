@@ -30,7 +30,6 @@
       <label for="title" class="form-label">Post Owner Location</label>
       <input type="text" name="owner_location" class="form-control" value="{{ old('title') }}" required> 
     </div>
-
     
 
     <div class="mb-3">

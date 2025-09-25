@@ -26,7 +26,7 @@
     </div>
     <div class="col-md-6 col-lg-3 d-flex ftco-animate">
       <div class="blog-entry align-self-stretch">
-        <img src="{{ asset('storage/' . $post->image_path) }}" alt="Post Image" class="block-20">
+        <img src="{{ postImageUrl($post->image_path) }}" alt="{{ $post->title }}" class="block-20">
         </a>
         <div class="text p-4">
          <div class="meta mb-2">

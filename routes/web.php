@@ -35,6 +35,9 @@ Route::get('/blog', [PostController::class, 'index'])->name('blog.index'); // Li
 
 // Admin blog post creation
 Route::middleware(['auth:admin'])->group(function () {
+    // admin landing page with posts index
+    Route::get('/admin/dashboard', [AdminAuthController::class, 'dashboard'])->name('admin.dashboard');
+    
     Route::get('/admin/posts/create', [AdminPostController::class, 'create'])->name('posts.create'); // Show form to create a new post    
     Route::post('/admin/posts', [AdminPostController::class, 'store'])->name('posts.store'); // Store a new post
     Route::get('admin/blog', [AdminPostController::class, 'index'])->name('admin.posts.index'); // List all posts in admin

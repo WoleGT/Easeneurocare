@@ -13,9 +13,19 @@
     <label>Body</label>
     <textarea name="body" rows="6" required>{{ old('body', $post->body) }}</textarea>
 
+    <div class="mb-3">
+      <label for="title" class="form-label">Post Owner Name</label>
+      <input type="text" name="owner_name" class="form-control" value="{{ old('title') }}" required> 
+    </div>
+
+    <div class="mb-3">
+      <label for="title" class="form-label">Post Owner Location</label>
+      <input type="text" name="owner_location" class="form-control" value="{{ old('title') }}" required> 
+    </div>
+
     <label>Current Image</label>
     @if($post->image_path)
-        <img src="{{ asset('storage/' . $post->image_path) }}" width="150" />
+        <img src="{{ postImageUrl($post->image_path) }}" width="150" />
     @else
         <p>No image</p>
     @endif

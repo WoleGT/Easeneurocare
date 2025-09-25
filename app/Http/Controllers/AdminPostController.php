@@ -24,7 +24,7 @@ class AdminPostController extends Controller
     public function update(Request $request, Post $post)
   { 
     // Validate the request data
-    $validated = $request->validate([
+    $data = $request->validate([
         'title' => 'required|string|max:255',
         'body' => 'required|string',
         'image' => 'nullable|image|max:2048',
@@ -33,14 +33,19 @@ class AdminPostController extends Controller
     ]);
 
     if ($request->hasFile('image')) {
-        // Delete old image
-        if ($post->image_path) {
-            Storage::disk('public')->delete($post->image_path);
+        // Delete old image if it exists
+        if ($post->image_path && file_exists(public_path('storage/blog_images/' . $post->image_path))) {
+            unlink(public_path('storage/blog_images/' . $post->image_path));
         }
-        $validated['image_path'] = $request->file('image')->store('posts', 'public');
+
+        // Upload new image
+        $filename = time() . '_' . $request->file('image')->getClientOriginalName();
+        $request->file('image')->move(public_path('storage/blog_images'), $filename);
+        $data['image_path'] = $filename;
     }
 
-    $post->update($validated);
+
+    $post->update($data);
 
     return redirect()->route('admin.posts.index')->with('success', 'Post updated successfully!!');
    }
@@ -60,23 +65,33 @@ class AdminPostController extends Controller
             'owner_name' => 'nullable|string|max:255',
             'owner_location' => 'nullable|string|max:255',
         ]);
-          if ($request->hasFile('image')) {
-            $data['image_path'] = $request->file('image')->store('blog_images', 'public');
+
+
+         if ($request->hasFile('image')) {
+         // Move directly into public/storage/blog_images
+         $filename = time() . '_' . $request->file('image')->getClientOriginalName();
+        $request->file('image')->move(public_path('storage/blog_images'), $filename);
+
+        // Save only filename or relative path
+        $data['image_path'] = $filename;
         }
 
-            Post::create($data); 
+        Post::create($data); 
 
         return redirect()->route('posts.index')->with('success', 'Post created successfully!!');
     }
 
     public function destroy(Post $post)
     {
-    if ($post->image_path) {
-        Storage::disk('public')->delete($post->image_path);
+
+     if ($post->image_path && file_exists(public_path('storage/blog_images/' . $post->image_path))) {
+        unlink(public_path('storage/blog_images/' . $post->image_path));
     }
 
     $post->delete();
 
     return redirect()->route('admin.posts.index')->with('success', 'Post deleted successfully!!');
-}
+    }
+
+
 }

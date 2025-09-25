@@ -34,7 +34,7 @@
 
   @if($post->image_path)
   <div class="container-fluid px-0">
-    <img src="{{ asset('storage/' . $post->image_path) }}" width="100%" height="400" style="border-radius:3px">
+    <img src="{{ postImageUrl($post->image_path) }}" alt="{{ $post->title }}" width="100%" height="400" style="border-radius:3px">
   </div>
 @endif
 
