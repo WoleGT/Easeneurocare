@@ -137,17 +137,9 @@
 													<label class="label">Request service (optional)</label>
 													<select name="services" id="services" class="form-control">
 														<option value="">-- Select a Service --</option>
-														<option value="ATHS_free">ATHS</option>
-														<option value="CTR_free">CTR</option>
-														<option value="IA_free">IA</option>
-														<option value="HcTS_paid">HcTS</option>
-														<option value="ScTS_paid">ScTS</option>
-														<option value="HolcTH_paid">HolcTH</option>
-														<option value="SLT-AI_paid">SLT-AI</option>
-														<option value="PAI_paid">PAI</option>
-														<option value="CDoNC_paid">CDoNC</option>
-														<option value="Disco">Disco</option>
-														<option value="Trainings">Trainings</option>
+														<option value="ASSESSMENT">ASSESSMENT</option>
+														<option value="CARE">CARE</option>
+														<option value="TRAINING">TRAINING</option>
 													</select>
 												</div>
 											</div>

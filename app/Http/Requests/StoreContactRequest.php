@@ -25,7 +25,7 @@ class StoreContactRequest extends FormRequest
         'first_name'       => 'required|string|max:255',
         'last_name'        => 'required|string|max:255',
         'email'            => 'required|email|max:255',
-        'services'         => 'sometimes|nullable|in:ATHS_free,CTR_free,IA_free,HcTS_paid,ScTS_paid,HolcTH_paid,SLT-AI_paid,PAI_paid,CDoNC_paid,Disco,Trainings',
+        'services'         => 'sometimes|nullable|in:ASSESSMENT,CARE,TRAINING',
         'appointment_date' => 'nullable|date',
         'appointment_time' => 'nullable|date_format:H:i',
         'phone_number'     => 'nullable|string|max:20',

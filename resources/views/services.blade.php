@@ -24,6 +24,9 @@
 
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
 </head>
 <body>
 
@@ -84,22 +87,45 @@
 </section>
 <section class="ftco-section">
  <div class="container">
+  <a> Ease Neurocare services: <br><strong style="font-size:25px">ACT </strong><strong> A</strong>SSESSMENT, <strong>C</strong>ARE & <strong>T</strong>RAINING</a>
   <div class="row">
-   <div class="col-md-6 col-lg-2.4">
+   <div class="col-md-6 col-lg-4">
     <div class="causes causes-2 text-center ftco-animate">
      <div class="text p-3">
-       <h2>Care & Therapy Review (CTR)</h2>
+       <h2>ASSESSMENT</h2>
        <p>
-        This is a free monthly consultation to review care support and provide intervention advise to manage challenges that family carers or parents require in supporting there S.E.N.D /Neurodiverse child/young person/adult. 
+        Assessment - services include:
+        <ul>
+         <li>Interest Assessment.
+           <a style="text-decoration:underline" data-toggle="modal" data-target="#interestModal"> Learn More
+           </a>
+         </li>
+         <li>Speech and language assessment & intervention.
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#speechModal"> Learn More
+          </a>
+         </li>
+         <li>Occupational therapy assessment & intervention.
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#occupationalModal"> Learn More
+          </a>
+         </li>
+         <li>Physiotherapy assessment & intervention.
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#physiotherapyModal"> Learn More
+          </a>
+         </li>
+         <li>Clinical assessment & diagnosis (previosly CDoNC). 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#clinicalModal"> Learn More
+          </a>
+         </li>
+        </ul>
        </p>
        <p><a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a></p>
      </div>
    </div>
  </div>
- <div class="col-md-6 col-lg-2.4">
+ <div class="col-md-6 col-lg-4">
   <div class="causes causes-2 text-center ftco-animate">
    <div class="text p-3">
-     <h2>Interest Assessment (IA)</h2>
+     <h2>CARE</h2>
      <p>
       Our interest assessment helps the individual family carer/parents to identify their care needs, preferences and inclination to care, therapy and support. It is a valuable assessment to access services provided by Ease Neurocare Foundation Trust.
       <a href="images/EASE IA JULY 2025 Version.docx">Download request form, fill and send to: info@easeneurocare.org</a>
@@ -108,10 +134,10 @@
    </div>
  </div>
 </div>
-<div class="col-md-6 col-lg-2.4">
+<div class="col-md-6 col-lg-4">
   <div class="causes causes-2 text-center ftco-animate">
    <div class="text p-3">
-     <h2>Activity & Therapy Hub Service (ATHS)</h2>
+     <h2>TRAINING</h2>
      <p>
      This service provides a safe, supportive, and inclusive environment where neurodiverse (S.E.N.D) individuals can engage in therapeutic activities, develop life; communication and social skills, and receive targeted support to improve their quality of life. In this service neuro-diversed individuals and their families will receive and engage with professional support from occupational therapist, physiotherapist, educational support and care support.
      <p>
@@ -119,102 +145,32 @@
    </div>
  </div>
 </div>
-<div class="col-md-6 col-lg-2.4">
-  <div class="causes causes-2 text-center ftco-animate">
-   
-   <div class="text p-3">
-     <h2>Home-care Therapy Support (HcTS)</h2>
-     <p>
-     We offer up to 8 hours a day professional care and support for your child. Our home care service is not a baby seating service rather, its a service that involves the application of clinical care and intervention that supports your child towards learning, development and independent living. This helps to build their self esteem and confidence.
-     <p>
-     <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a>
-   </div>
- </div>
+</div>
 </div>
 
-<div class="col-md-6 col-lg-2.4">
-  <div class="causes causes-2 text-center ftco-animate">
-   <div class="text p-3">
-     <h2><a href="#">School-care Therapy Support(ScTS)</a></h2>
-     <p>
-        Our school support is a service that ensures your child is adequately supported at school, providing advocacy and opportunity for effective learning.
-     </p>
-     
-     <p><a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a></p>
-   </div>
- </div>
-</div>
-<div class="col-md-6 col-lg-2.4">
-  <div class="causes causes-2 text-center ftco-animate">
-   <div class="text p-3">
-     <h2>Holiday-care Therapy Support (HolcTH)</h2>
-     <p>
-       This service provides and develops cognitive, psychomotor and effective skills in your child during school holidays. Our approach is not academic but pragmatic and practical in nature, we offer the best support to develop your life and functional skills that helps to bridge the gap between school and home. Instead of your child attending summer coaching lessons, join us to have fun filled activities that develops valuable life skills in you neuro-diversed/S.E.N.D child.
-     </p>   
-     <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a>
-   </div>
- </div>
-</div>
-<div class="col-md-6 col-lg-2.4">
-  <div class="causes causes-2 text-center ftco-animate">
-   <div class="text p-3">
-     <h2>Speech and Language Therapy Assessment and Intervention (SLT-AI)</h2>
-     <p>
-      In our speech and language therapists (SLTs) assessment and intervention service we evaluate, diagnose, and treat your child/individual with communication, speech, language, voice, fluency, or swallowing difficulties.
-     </p>
-     <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a>
-   </div>
+
+<!-- Interest Modal -->
+<div class="modal fade" id="interestModal" tabindex="-1" role="dialog" aria-labelledby="interestModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="interestModalLabel">Interest Assessment</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Our Interest Assessment helps identify a child's preferences, strengths, and areas of curiosity. This guides personalized care and therapy planning tailored to their unique developmental needs.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="{{ url('/contact') }}" class="btn btn-primary">Request This Service</a>
+      </div>
+    </div>
   </div>
- </div>
-<div class="col-md-6 col-lg-2.4">
-  <div class="causes causes-2 text-center ftco-animate">  
-   <div class="text p-3">
-     <h2>Physiotherapy Assessment and Intervention (PAI)</h2>
-     <p>
-        Our qualified and licensed physiotherapist will evaluates your child/adult with physical condition and implements targeted strategies to restore, maintain, or improve movement and function.
-     </p>
-     <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a>
-   </div>
- </div>
 </div>
-<div class="col-md-6 col-lg-2.4">
-  <div class="causes causes-2 text-center ftco-animate">  
-   <div class="text p-3">
-     <h2>Clinical Diagnosis of Neurodiverse condition (CDoNC)</h2>
-     <p>
-        This is a process used in assessment and diagnosing a neuro developmental condition or variations in brain function.
-     </p>
-     <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a>
-   </div>
- </div>
-</div>
-<div class="col-md-6 col-lg-2.4">
-  <div class="causes causes-2 text-center ftco-animate">  
-   <div class="text p-3">
-     <h2>DISCO</h2>
-     <p>
-        Ease DISCO event is an activity that is both therapeutic and social. It promotes sensory integration in a controlled environment, encourages social inclusion, interaction, emotional expressions and joy for participants. Other benefits of this event include: our proven disco structure for people living with hidden and physical disabilities has helped in promoting motor skills, coordination and physical health through dancing, as it is a fun way to exercise and helping to  improve well-being and reduce restlessness. It has built confidence and independence by promoting self-esteem empowering children, family carers and parents. Our Ease annual disco provides and promotes a relaxed space for families and caregivers to connect, share experiences, and build support networks. Our Disco event has also reduce care-givers stress and promote family well being.
-     </p>
-     <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a>
-   </div>
- </div>
-</div>
-<div class="col-md-6 col-lg-2.4">
-  <div class="causes causes-2 text-center ftco-animate">  
-   <div class="text p-3">
-     <h2>Training Services</h2>
-     <p>
-        Empowering Educators, Families,and Professionals Across Africa.<br>
-        At Ease Neurocare, we believe knowledge is the first step to creating a more inclusive and supportive enviaronment for individuals with neurodevelpmental differences. Thats why we offer specialize training services designed to equip participants with skills and understanding needed to support children and young adults in this areas:
-          <ul>
-            <li>Autisim Spectrum Disorder (ASD)</li>
-            <li>Learning Disabilities and Dificulties</li>
-            <li>Challenging Behaviours</li>  
-       </p>
-     <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a>
-   </div>
- </div>
-</div>
+
+
 </section>
 
 <footer class="footer">
