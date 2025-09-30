@@ -97,23 +97,23 @@
         Assessment - services include:
         <ul>
          <li>Interest Assessment.
-           <a style="text-decoration:underline" data-toggle="modal" data-target="#interestModal"> Learn More
+           <a style="text-decoration:underline" data-toggle="modal" data-target="#interestModal">More
            </a>
          </li>
          <li>Speech and language assessment & intervention.
-          <a style="text-decoration:underline" data-toggle="modal" data-target="#speechModal"> Learn More
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#speechModal">More
           </a>
          </li>
          <li>Occupational therapy assessment & intervention.
-          <a style="text-decoration:underline" data-toggle="modal" data-target="#occupationalModal"> Learn More
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#occupationalModal">More
           </a>
          </li>
          <li>Physiotherapy assessment & intervention.
-          <a style="text-decoration:underline" data-toggle="modal" data-target="#physiotherapyModal"> Learn More
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#physiotherapyModal">More
           </a>
          </li>
          <li>Clinical assessment & diagnosis (previosly CDoNC). 
-          <a style="text-decoration:underline" data-toggle="modal" data-target="#clinicalModal"> Learn More
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#clinicalModal">More
           </a>
          </li>
         </ul>
@@ -127,9 +127,38 @@
    <div class="text p-3">
      <h2>CARE</h2>
      <p>
-      Our interest assessment helps the individual family carer/parents to identify their care needs, preferences and inclination to care, therapy and support. It is a valuable assessment to access services provided by Ease Neurocare Foundation Trust.
-      <a href="images/EASE IA JULY 2025 Version.docx">Download request form, fill and send to: info@easeneurocare.org</a>
-     <p>
+        Care - services include:
+        <ul>
+         <li>Homecare therapy support.
+           <a style="text-decoration:underline" data-toggle="modal" data-target="#homecareModal">More
+           </a>
+         </li>
+         <li>Schoolcare therapy support.
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#schoolcareModal">More
+          </a>
+         </li>
+         <li>Respitecare therapy support(during weekends and holidays).
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#respitecareModal">More
+          </a>
+         </li>
+         <li>
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#physiotherapyModal">More
+          </a>
+         </li>
+         <li>Activity & lifeskill developement support. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#activityModal">More
+          </a>
+         </li>
+         <li>Care therapy reviews. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#caretherapyModal">More
+          </a>
+         </li>
+         <li>DISCO. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#discoModal">More
+          </a>
+         </li>
+        </ul>
+       </p>
       <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a></p>
    </div>
  </div>
@@ -139,8 +168,54 @@
    <div class="text p-3">
      <h2>TRAINING</h2>
      <p>
-     This service provides a safe, supportive, and inclusive environment where neurodiverse (S.E.N.D) individuals can engage in therapeutic activities, develop life; communication and social skills, and receive targeted support to improve their quality of life. In this service neuro-diversed individuals and their families will receive and engage with professional support from occupational therapist, physiotherapist, educational support and care support.
-     <p>
+		Training - services include:
+        <ul>
+         <li>Online class training.
+           <a style="text-decoration:underline" data-toggle="modal" data-target="#onlineModal">More
+           </a>
+         </li>
+         <li>Person specific training.
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#personModal">More
+          </a>
+         </li>
+         <li>Special education needs and disability support training for schools, teachers, and nurses.
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#specialModal">More
+          </a>
+         </li>
+         <li>Care certificate training in Autism spectrum disorder. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#carecertificateModal">More
+          </a>
+         </li>
+         <li>Sensory processing disorder. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#sensoryModal">More
+          </a>
+         </li>
+         <li>Associated & Co-occuring syndrome. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#cooccuringModal">More
+          </a>
+         </li>
+		 <li>Learning disability & difficulty. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#learningModal">More
+          </a>
+         </li>
+		 <li>Challenging behaviour. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#challengingModal">More
+          </a>
+         </li>
+		 <li>Supporting individuals living with cerebral palsy. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#supportingModal">More
+          </a>
+         </li>
+		 <li>Social advocacy in disability support. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#socialModal">More
+          </a>
+         </li>
+		 <li>Mental health awareness & support. 
+          <a style="text-decoration:underline" data-toggle="modal" data-target="#mentalModal">More
+          </a>
+         </li>
+        </ul>
+       </p>
       <a href="{{ url('/contact') }}" class="btn btn-light w-100">Request Service</a></p>
    </div>
  </div>
@@ -148,7 +223,7 @@
 </div>
 </div>
 
-
+<!-- ASSESSMENT ModalS -->
 <!-- Interest Modal -->
 <div class="modal fade" id="interestModal" tabindex="-1" role="dialog" aria-labelledby="interestModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -164,13 +239,427 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a href="{{ url('/contact') }}" class="btn btn-primary">Request This Service</a>
       </div>
     </div>
   </div>
 </div>
 
+<!-- speech Modal -->
+<div class="modal fade" id="speechModal" tabindex="-1" role="dialog" aria-labelledby="speechModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="speechModalLabel">Speech and language assessment & intervention</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         In our speech and language therapists (SLTs) assessment and intervention service we evaluate, diagnose, and treat your child/individual with communication, speech, language, voice, fluency, or swallowing difficulties.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Occupational Modal -->
+<div class="modal fade" id="occupationalModal" tabindex="-1" role="dialog" aria-labelledby="occupationalModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="occupationalModalLabel">Occupational therapy assessment & intervention</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         Provide Details
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Physiotherapy Modal -->
+<div class="modal fade" id="physiotherapyModal" tabindex="-1" role="dialog" aria-labelledby="physiotherapyModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="physiotherapyModalLabel">Physiotherapy assessment & intervention</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Our qualified and licensed physiotherapist will evaluates your child/adult with physical condition and implements targeted strategies to restore, maintain, or improve movement and function.
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Clinical Modal -->
+<div class="modal fade" id="clinicalModal" tabindex="-1" role="dialog" aria-labelledby="clinicalModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="clinicalModalLabel">Clinical assessment & diagnosis (previosly CDoNC)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        In our speech and language therapists (SLTs) assessment and intervention service we evaluate, diagnose, and treat your child/individual with communication, speech, language, voice, fluency, or swallowing difficulties.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARE ModalS -->
+<!-- Homecare Modal -->
+<div class="modal fade" id="homecareModal" tabindex="-1" role="dialog" aria-labelledby="homecareModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="homecareModalLabel">Homecare therapy support</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Schoolcare Modal -->
+<div class="modal fade" id="schoolcareModal" tabindex="-1" role="dialog" aria-labelledby="schoolcareModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="schoolcareModalLabel">Schoolcare therapy support</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Respitecare Modal -->
+<div class="modal fade" id="respitecareModal" tabindex="-1" role="dialog" aria-labelledby="respitecareModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="respitecareModalLabel">Respitecare therapy support</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Activity Modal -->
+<div class="modal fade" id="activityModal" tabindex="-1" role="dialog" aria-labelledby="activityModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="activityModalLabel">Activity & lifeskill development support</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Caretherapy Modal -->
+<div class="modal fade" id="caretherapyModal" tabindex="-1" role="dialog" aria-labelledby="caretherapyModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="caretherapyModalLabel">Care therapy reviews</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Disco Modal -->
+<div class="modal fade" id="discoModal" tabindex="-1" role="dialog" aria-labelledby="discoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="discoModalLabel">DISCO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRAINING ModalS -->
+<!-- Online Modal -->
+<div class="modal fade" id="onlineModal" tabindex="-1" role="dialog" aria-labelledby="onlineModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="onlineModalLabel">Online class training</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Deatils shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Person Specific Modal -->
+<div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="personModalLabel">Person specific training</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Special education needs Modal -->
+<div class="modal fade" id="specialModal" tabindex="-1" role="dialog" aria-labelledby="specialModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="specialModalLabel">Special education needs and disability support training</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Care Certificate Training Modal -->
+<div class="modal fade" id="carecertificateModal" tabindex="-1" role="dialog" aria-labelledby="carecertificateModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carecertificateModalLabel">Care certificate training in Autism spectrum disorder</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		 Details shortly
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sensory processing Modal -->
+<div class="modal fade" id="sensoryModal" tabindex="-1" role="dialog" aria-labelledby="sensoryModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="sensoryModalLabel">Sensory processing disorder</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Associated & Co-occuring Modal -->
+<div class="modal fade" id="cooccuringModal" tabindex="-1" role="dialog" aria-labelledby="cooccuringModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cooccuringModalLabel">Associated & Co-occuring syndrome</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Learning disability Modal -->
+<div class="modal fade" id="learningModal" tabindex="-1" role="dialog" aria-labelledby="learningModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="learningModalLabel">Learning disability & difficulty</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Challenging Modal -->
+<div class="modal fade" id="challengingModal" tabindex="-1" role="dialog" aria-labelledby="challengingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="challengingLabel">Challenging behaviour</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Supporting individuals Modal -->
+<div class="modal fade" id="supportingModal" tabindex="-1" role="dialog" aria-labelledby="supprotingModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="supportingModalLabel">Supporting individuals living with cerebral palsy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Social advocacy Modal -->
+<div class="modal fade" id="socialModal" tabindex="-1" role="dialog" aria-labelledby="socialModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="socialModalLabel">Social advocacy in disability support</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Mental health Modal -->
+<div class="modal fade" id="mentalModal" tabindex="-1" role="dialog" aria-labelledby="mentalModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mentalModalLabel">Mental health awareness & support</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Details shortly	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
 
 <footer class="footer">

@@ -170,7 +170,7 @@
 											<div class="col-md-12">
 												<div class="form-group">
 													<label class="label" for="#">Message</label>
-													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
+													<textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Provide details of service required" required></textarea>
 												</div>
 											</div>
 											<div class="col-md-12">
